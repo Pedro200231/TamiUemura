@@ -1,2 +1,13 @@
 <app-navbar></app-navbar>
-
+<div >
+    <h3>{{ imagens[indexImagemAtiva].title }}</h3>
+</div>
+<div>
+    <img [src]="imagens[indexImagemAtiva].url">
+</div>
+<div class="botoes-controle">
+    <button
+      *ngFor="let imagem of imagens; index as i"
+      [class.ativo]="i === indexImagemAtiva"
+      (click)="pararTimer(); ativarImagem(i)"></button>
+  </div>
