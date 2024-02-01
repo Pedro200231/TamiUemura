@@ -1,0 +1,29 @@
+@keyframes blink {
+    0% {
+        background-size: 100% 100%;
+    }
+    50% {
+        background-size: 120% 120%; 
+    }
+    100% {
+        background-size: 100% 100%;
+    }
+}
+
+nav{
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.185);
+    width: 100%;
+    background-image: radial-gradient(circle, #C2AB67, #8F8568, #C2AB67, #8F8568) ;
+    animation: blink 1s infinite; 
+    height: 15vh;
+}
+a{
+    color: black;
+    font-size: 1.2em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+    font-size: 2em;
+}

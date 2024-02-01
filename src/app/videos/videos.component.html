@@ -1,0 +1,14 @@
+<app-navbar></app-navbar>
+
+<div style="display: flex; justify-content: center;">
+    <h3>{{ videos[indexVideoAtiva].title }}</h3>
+</div>
+<div style="display: flex; justify-content: center; max-height: 70vh;">
+  <video controls loop [src]="videos[indexVideoAtiva].url"></video>
+</div>
+<div class="botoes-controle">
+    <button
+      *ngFor="let video of videos; index as i"
+      [class.ativo]="i === indexVideoAtiva"
+      (click)="ativarVideo(i)"></button>
+  </div>
